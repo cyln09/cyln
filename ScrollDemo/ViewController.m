@@ -28,7 +28,7 @@
     TestModel *modelCopy = [model copy];
     TestModel *model1 = modelCopy;
     modelCopy.name = @"哈哈";
-    [super viewDidLoad];
+    NSLog(@"举个栗子");
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         NSLog(@"=================1");
         dispatch_sync(dispatch_get_main_queue(), ^{
